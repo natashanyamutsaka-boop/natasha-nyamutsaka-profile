@@ -85,3 +85,11 @@ footer p { margin: 0; }
   border: 1px solid var(--color-primary);
   border-radius: 999px;
 }
+/* ===== About: Grid ===== */
+#about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+#about h2 { grid-column: 1 / -1; }
