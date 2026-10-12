@@ -2,28 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="style3.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = { corePlugins: { preflight: false } };
+        </script>
 </head>
 <body>
-    <header>
-        <img src="C:/Users\NATASHA NYAMUTSAKA\Desktop\My computer\Pictures\pictures\Random;)\WhatsApp Image 2023-02-20 at 19.32.29 (2).jpg"alt = "Profile image">
-        <h1>Natasha Nyamutsaka</h1>
-        <p>Software Engineeer</p>
-        <nav>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#skills">Skills</a></li>
+        <header id="home"
+            class="flex flex-col items-center gap-4 bg-slate-800 p-6 text-center text-white md:flex-row md:justify-between md:px-10 md:text-left">
+        <div class="flex flex-col items-center gap-4 md:flex-row">
+            <img src="profile.jpg" alt="Natasha Nyamutsaka smiling, headshot photo"
+                class="h-28 w-28 rounded-full border-4 border-blue-400 object-cover md:h-32 md:w-32">
+            <div>
+                <h1 class="mb-1 text-3xl font-bold md:text-4xl">Natasha Nyamutsaka</h1>
+                <p class="mb-0 text-slate-300">Software Engineer</p>
+            </div>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul class="m-0 flex list-none flex-wrap justify-center gap-4 p-0 md:gap-6">
+                <li><a href="#home" class="text-white hover:underline">Home</a></li>
+                <li><a href="#about" class="text-white hover:underline">About</a></li>
+                <li><a href="#skills" class="text-white hover:underline">Skills</a></li>
+                <li><a href="#contact" class="text-white hover:underline">Contact</a></li>
+            </ul>
         </nav>
-    </header>
+        </header>
     <main>
         <section id ="about">
             <h2>About Me</h2>
             <article>
                 <h3>My Journey</h3>
-                <p> Hello, My name is Natasha Nyamutsaka and I am a passionate software engineer with experience in web technologies.</p>
+                <p> Hello, My name is Natasha Nyamutsaka. I’m a second-year Computer Information Systems student at Africa University, currently learning more about web development. I enjoy seeing how different parts of a website come together, from writing clean HTML to making sure a page is easy to use. I want to keep improving my skills as I learn more about building websites and creating useful digital solutions.One of my favorite projects so far has been building an IoT smoke and water sensor system — figuring out how the hardware, logic, and output actually talk to each other taught me more than most lectures could. This page is a class assignment, but I'm building it as a real portfolio I'll keep adding to.</p>
             </article>
              <aside>
                 <h3>Career Goal</h3>
